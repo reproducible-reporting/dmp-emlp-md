@@ -1,0 +1,110 @@
+# The version of the template, between single quotes
+dmp_template_version: '1.0'
+
+# The Git repository "slug"
+slug: 'dmp-empl-md'
+
+## 2. Project information
+
+project_type: BOF project
+
+project_title: 'Groundbreaking models for spectroscopy and charge transport in molecular dynamics simulations'
+
+# Official project start date in YYYY-0M-0D format, between single quotes.
+project_start: '2023-10-01'
+
+# Official project end date in YYYY-0M-0D format, between single quotes.
+project_end: '2027-09-30'
+
+# Abstract from the project application
+project_abstract: |
+  Molecular dynamics is an exceptional simulation tool that connects fundamental physics
+  with more applied research.
+  It is the workhorse in our collaborations with experimental researchers
+  to enrich their findings with computational predictions and insights.
+  Such simulations rely on an interatomic force model,
+  which is always a trade-off between computational efficiency, accuracy,
+  and the ability to describe all relevant physics.
+  Recently, we proposed the "electron Machine Learning Potential" (eMLP),
+  which reconciles these requirements in an unparalleled way:
+  it is not only fast and accurate,
+  but also able to describe physical phenomena inaccessible to analoguous models,
+  such as spectra (direct comparison with experiment),
+  and charge transport (important for energy materials).
+  Our goal is to elevate the eMLP from a promising prototype to a robust simulation tool,
+  and to showcase its strengths with unrivaled simulations of solid electrolyte conductivity
+  and Raman spectra.
+
+grant_number: BOF/24J/2023/121
+grant_url: |
+  https://research.ugent.be/web/result/project/9391bf4a-1004-11ee-a391-81a6d079669c/details/bof-24j-2023-121-groundbreaking-models-for-spectroscopy-and-charge-transport-in-molecular-dynamics-simulations/en
+
+
+## 3. Relevant Persons and Services
+
+principal_investigators: |
+  - Toon Verstraelen,
+    [toon.verstraelen@ugent.be](mailto:toon.verstraelen@ugent.be),
+    [ORCID:0000-0001-9288-5608](https://orcid.org/0000-0001-9288-5608)
+
+  - Jelle Vekeman,
+    [jelle.vekeman@ugent.be](mailto:jelle.vekeman@ugent.be),
+    [ORCID:0000-0001-6633-9283](https://orcid.org/0000-0001-6633-9283)
+
+other_researchers: |
+  - TODO
+
+access_long_term: |
+  - TODO
+
+university_storage: |
+  - UGent Project Shares.
+    This is a Windows-based platform without support for
+    Unix file permissions, symbolic links, nor SSH access.
+    Hence, it will only be used to for long-term storage of completed datasets,
+    for which the burden of the occasional manual upload of data is bearable.
+  - On-premises SSH server.
+    All researches with access to live data will exchange larger data sets
+    through an SSH server managed by one of the PIs.
+
+hpc: |
+  - Resource-intensive calculations are carried out at the infrastructure of the
+    [Vlaams Supercomputer Centrum (VSC)](https://www.vscentrum.be/).
+    This platform lacks efficient tools for collaboration on datasets due to strict
+    file ownership rules.
+    Globus is not used due to its excessive complexity, limited access and restricted configuration
+    at the UGent Tier-2 clusters.
+
+
+## 4. Data Collection
+
+# List the types of the raw data sets that will be generated through experimental
+# measurements or computer simulations.
+# Mention the file formats and explain long-term usability.
+# Also mention what role each data set will play in the project.
+raw_data_what: |
+  - Training data for the machine learning models in the project.
+    (extended XYZ format)
+  - Trained hybrid machine-learning and physical models to describe interactions
+    at the atomic scale. (pytorch models)
+  - Molecular dynamics simulations obtained using the models from the previous point.
+    (CSV and XYZ trajectory formats)
+  - Post-processing analysis of the molecular dynamics simulations
+    to derive physical properties that can predict or corroborate experimental outcomes.
+    (CSV, NPY, NPZ, and Zar formats)
+
+# List additional source files in text-based formats that will be employed in the project.
+# Emphasize standard formats that are widely adopted and can be created and processed with open-source tools.
+source_text_how: |
+  - Jinja2 templates for input files of simulation software
+    (quantum chemistry, machine-learning and molecular dynamics).
+
+## 7. Data Selection and Preservation after Research
+
+# Describe for how long data are preserved.
+# Mention requirements imposed by funding agencies.
+data_lifetime: |
+  Ghent University's RDM policy framework expects 'relevant' research data
+  to be preserved for a minimum of 5 years.
+  However, in our field, data remains valuable for longer periods of time.
+  The data created in this project will be preserved for at least 10 years.
