@@ -5,9 +5,14 @@ This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareA
 
 # Data Management Plan "emlp-md"
 
-This repository contains the version history of the data management plan for the project:
+This repository contains the version history of the data management plan (DMP) for the project:
 
 > Groundbreaking models for spectroscopy and charge transport in molecular dynamics simulations
+
+The DMP is built from source with
+[StepUp RepRep](https://reproducible-reporting.github.io/stepup-reprep/)
+and is based on the template in GitHub repository
+[reproducible-reporting/dmp-template](https://github.com/reproducible-reporting/dmp-template).
 
 To rebuild and work on the data management plan, `dmp.pdf`,
 you need to set up the repository as follows:
