@@ -16,6 +16,7 @@ you need to set up the repository as follows:
 git clone git@github.com:reproducible-reporting/dmp-emlp-md .git
 cd dmp-emlp-md
 ./setup-venv-pip.sh
+direnv allow
 pre-commit install
 stepup -n
 ```
