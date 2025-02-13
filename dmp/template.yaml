@@ -1,0 +1,8 @@
+# The version of the template, between single quotes
+version: 'v2.0'
+github_owner: reproducible-reporting
+github_repository: dmp-template
+# Useful for template authoring: if uncommented, a local copy is used instead of downloading.
+# local:
+#   - ../../template/
+#   - ../../template/dmp_template.typ

@@ -1,14 +1,14 @@
-# The version of the template, between single quotes
-dmp_template_version: 'v1.1'
+## 1. Preamble
 
-# The Git repository "slug"
-slug: 'dmp-emlp-md'
+# The GitHub repository "owner" and "repository" of this DMP.
+github_owner: reproducible-reporting
+github_repository: dmp-emlp-md
 
 ## 2. Project information
 
 project_type: BOF project
 
-project_title: 'Groundbreaking models for spectroscopy and charge transport in molecular dynamics simulations'
+project_title: Groundbreaking models for spectroscopy and charge transport in molecular dynamics simulations
 
 # Official project start date in YYYY-0M-0D format, between single quotes.
 project_start: '2023-10-01'
@@ -42,38 +42,46 @@ grant_url: |
 
 ## 3. Relevant Persons and Services
 
-principal_investigators: |
-  - Toon Verstraelen,
-    [toon.verstraelen@ugent.be](mailto:toon.verstraelen@ugent.be),
-    [ORCID:0000-0001-9288-5608](https://orcid.org/0000-0001-9288-5608)
-
-  - Jelle Vekeman,
-    [jelle.vekeman@ugent.be](mailto:jelle.vekeman@ugent.be),
-    [ORCID:0000-0001-6633-9283](https://orcid.org/0000-0001-6633-9283)
-
-other_researchers: |
-  - TODO
-
-access_long_term: |
-  - Mieke De Schepper, [midschep.deschepper@ugent.be](mailto:midschep.deschepper@ugent.be),
+persons:
+  - name: Toon Verstraelen
+    role: PI
+    email: toon.verstraelen@ugent.be
+    orcid: 0000-0001-9288-5608
+    live: yes
+    archive: yes
+  - name: Jelle Vekeman
+    role: co-PI
+    email: jelle.vekeman@ugent.be
+    orcid: 0000-0001-6633-9283
+    live: yes
+    archive: yes
+  - name: Kendrick Di Piro
+    role: doctoral student
+    email: kendrick.dipiro@ugent.be
+    orcid: 0009-0008-5092-6289
+    live: yes
+    archive: no
+  - name: Mieke De Schepper
+    role: project manager
+    email: midschep.deschepper@ugent.be
+    orcid: null
+    live: no
+    archive: yes
 
 university_storage: |
   - UGent Project Shares.
     This is a Windows-based platform without support for
     Unix file permissions, symbolic links, nor SSH access.
     Hence, it will only be used to for long-term storage of completed datasets,
-    for which the burden of the occasional manual upload of data is bearable.
+    for which the burden of the occasional manual upload of data is acceptable.
   - On-premises SSH server.
     All researches with access to live data will exchange larger data sets
     through an SSH server managed by one of the PIs.
 
 hpc: |
   - Resource-intensive calculations are carried out at the infrastructure of the
-    [Vlaams Supercomputer Centrum (VSC)](https://www.vscentrum.be/).
-    This platform lacks efficient tools for collaboration on datasets due to strict
-    file ownership rules.
-    Globus is not used due to its excessive complexity, limited access and restricted configuration
-    at the UGent Tier-2 clusters.
+    #link("https://www.vscentrum.be/")[Vlaams Supercomputer Centrum (VSC)].
+    Data is only kept on the HPC clusters for the duration of the calculations.
 
 
 ## 4. Data Collection
