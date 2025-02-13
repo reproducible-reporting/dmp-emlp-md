@@ -24,7 +24,7 @@ It is assumed that you are familiar with these tools and know how to use them.
 The following terminal commands will clone this repository and build the PDF.
 
 ```bash
-git clone git@github.com:reproducible-reporting/dmp-emlp-md/.git
+git clone git@github.com:reproducible-reporting/dmp-emlp-md.git
 cd dmp-emlp-md
 ./setup-venv-pip.sh
 direnv allow
