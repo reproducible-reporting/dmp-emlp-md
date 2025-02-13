@@ -7,7 +7,7 @@ github_repository: dmp-emlp-md
 ## 2. Project information
 
 project_type: BOF project
-
+project_slug: eMLP-MD
 project_title: Groundbreaking models for spectroscopy and charge transport in molecular dynamics simulations
 
 # Official project start date in YYYY-0M-0D format, between single quotes.
