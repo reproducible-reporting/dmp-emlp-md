@@ -20,9 +20,7 @@ def info():
 def run(out):
     # Get info from the current commit, related to fields.
     args = ["git", "log", "-1", "--date=format:%d %B %Y", "--format=%ad"]
-    cp = subprocess.run(
-        args, capture_output=True, stdin=subprocess.DEVNULL, check=False
-    )
+    cp = subprocess.run(args, capture_output=True, stdin=subprocess.DEVNULL, check=False)
     generated = {"fields_current": cp.stdout.decode().strip()}
 
     # Get info from the current and latest template version.
@@ -37,9 +35,7 @@ def run(out):
         owner = template["github_owner"]
         repository = template["github_repository"]
         info = json.load(
-            urlopen(
-                f"https://api.github.com/repos/{owner}/{repository}/commits/{version}"
-            )
+            urlopen(f"https://api.github.com/repos/{owner}/{repository}/commits/{version}")
         )
         dt = datetime.datetime.fromisoformat(info["commit"]["author"]["date"])
         generated[f"template_{label}"] = dt.strftime("%d %B %Y")
