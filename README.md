@@ -21,7 +21,7 @@ and is based on the template in GitHub repository
 To rebuild and work on the data management plan, `dmp.pdf`, you must have
 [Python](https://www.python.org/) 3,
 [Git](https://git-scm.com/),
-[Typst](https://github.com/typst/typst) 0.12,
+[Typst](https://github.com/typst/typst) 0.15.1,
 and [direnv](https://direnv.net/)
 installed on your computer.
 It is assumed that you are familiar with these tools and know how to use them.
@@ -35,7 +35,7 @@ cd dmp-emlp-md
 direnv allow
 pre-commit install
 cd dmp
-stepup boot
+sb
 ```
 
 This is a living document of which the latest Git commit contains the most up-to-date information.
